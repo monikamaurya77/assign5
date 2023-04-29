@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <style>
+     .mainDiv{
+        display: flex;
+        justify-content: space-evenly;
+        background-color: red;
+        color: white;
+        
+     }
+     .navDiv{
+        
+        display: flex;
+        width: 300px;
+        justify-content: space-between;
+        margin-top: 5px;
+        align-items: center;
+        
+     }
+     .p{
+        
+        height: 40px;
+        align-items: center;
+        padding-top: 7px;
+        border-radius: 10px;
+     }
+     .p:hover{
+        
+        background-color: darkred;
+        
+     }
+     img{
+        width: 100%;
+        height: 550px;
+     }
+     span{
+        color: black;
+     }
+     .main{
+      background-color: rgb(236, 236, 236);
+      height: 80vh;
+      text-align: center;
+      padding-top: 10%
+     }
+        
+    </style>
+
+</head>
+<body>
+    <div id="root">
+
+    </div>
+
+    <div id="bodyDiv">
+        
+    </div>
+
+    <script type="text/babel">
+       let nav=<div className="mainDiv">
+                    <h2>Koding Made Simple</h2>
+                    <div className="navDiv">
+                    <p className="p">BootStrap</p>
+                    <p className="p">Themes</p>
+                    <p className="p">Blog</p>
+                    </div>
+               </div>
+       ReactDOM.render(nav,document.getElementById('root'))
+       
+       let body=<div className="bodyDIV">
+    <div className="main">
+      <h1>Customize Bootsrap Navbar</h1>
+      <p>Easy way to change navbar background, text and hover link in background</p>
+      </div> 
+          
+               
+                </div>
+       ReactDOM.render(body,document.getElementById('bodyDiv'))
+    </script>
+</body>
+</html>
